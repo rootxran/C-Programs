@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	int check;//declaring variable for print prime numbers only
-	for(int i = 1; i <= 100; i++)
+	for(int i = 1; i <= 100; i++)//making range from 1 to 100
 	{
 		if(i == 1)//making condition for 1
 		{
