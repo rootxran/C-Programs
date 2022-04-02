@@ -10,7 +10,7 @@ int main()
 	cout << "Enter second number: ";
 	cin >> num2;
 	compare = num1 < num2;//comparing two numbers and storing boolean value in compare variable
-  //switch(num1 < num2) will do same as compare but in switch condition it is not good to use boolean condtional
+  //switch(num1 < num2) will do same as compare but in switch condition it is not good to use boolean condition
   //because we need variety in that condition values so that we can make different cases rather that 1 and 0 cases
   //that is why we use switch statement rather than if else
 	switch(compare)
