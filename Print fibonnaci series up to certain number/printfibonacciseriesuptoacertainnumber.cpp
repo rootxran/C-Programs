@@ -9,7 +9,7 @@ int main()
 	cin >> number;//taking input from user and storing that in number variable
 	while(number >= a)//comparing number to a to also print number
 	{
-		cout << a << "\t";//printing only a variable because it starts from 0 and it will contain all values in series
+		cout << a << "\t";//printing only (a) variable because it starts from 0 and it will contain all values in series
 		sum = a + b;//adding value of a and b after that storing that in to sum
 		a = b;//assigning value of b to a
 		b = sum;//assigning value of sum to b
