@@ -1,4 +1,4 @@
-//Write a program to take two numbers from user and then calculate sum after that tell user if he want to do repeat addition or not
+//Write a program to take two numbers from user and then calculate sum after that tell user if he want to repeat addition or not
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
