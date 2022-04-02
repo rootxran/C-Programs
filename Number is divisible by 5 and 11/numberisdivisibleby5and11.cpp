@@ -1,4 +1,4 @@
-//Write a program to take number from user and check whether that number is divisible by 5 and 11
+//Write a program to take number from user and check whether that number is divisible by 5 and 11 or not
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
