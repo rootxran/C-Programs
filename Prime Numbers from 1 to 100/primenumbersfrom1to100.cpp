@@ -26,5 +26,5 @@ int main()
 			cout << i << " is a prime number." << endl;
 		}
 	}
-	return 0;
+// 	return 0;
 }
