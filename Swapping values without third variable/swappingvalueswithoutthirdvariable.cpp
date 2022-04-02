@@ -20,4 +20,5 @@ int main()
     cout << "After Swaping" << endl;
     cout << "--------------------------" << endl;
     cout << "a = " << a << "\tb = " << b << endl;
+    return 0;
 }
