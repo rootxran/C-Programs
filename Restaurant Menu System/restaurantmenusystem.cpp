@@ -1,3 +1,4 @@
+//Restrictions >> you can only use if else, switch and goto
 //Write a program for restaurant menu system in which user can order multiple items and in the end calculate total amount of order and
 //deduct order amount from his balance in credit card
 //By RAO ALI NAWAZ
