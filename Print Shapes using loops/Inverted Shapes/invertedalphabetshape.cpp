@@ -42,7 +42,7 @@ int main()
                 cout << "  ";//two spaces to make it synchronize it with spaces of alphabets
             }
         }
-        check = '@';//as we are incrementing it in if statement of loop so that we used one before A. A has ascii 65 and @ has ascii 64
+        check = 'A' - 1;//as we are incrementing it in if statement of loop so that we used one before A. A has ascii 65 and @ has ascii 64
         // check = static_cast <char> (64);
         cout << endl;
     }
