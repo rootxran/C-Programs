@@ -4,15 +4,17 @@
 using namespace std;
 int main()
 {
-	int number, sum = 0;//declaring variables and initializing sum variable to 0 because we have to add that to first number
+	int number, sum = 0, i = 1;//declaring variables and initializing sum variable to 0 because we have to add that to first number
 	float average;//declaring average variable
-	for(int i = 0; i < 10; i++)//intializing loop by 0 upto 10 and incrementing index by 1
+	while(i <= 10)
 	{
 		cout << "Enter a number: ";
 		cin >> number;//storing that user input number in number variable
 		sum = sum + number;//adding that user input number to sum
+		i++;//incrementing value of i to avoid infinite loop
 	}
 	average = sum / 10.0;//dividing sum by 10.0 to make it float divide
+	cout << sum << " is the sum of numbers." << endl;
 	cout << average << " is the average of numbers.";
 	return 0;
 }
