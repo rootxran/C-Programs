@@ -1,4 +1,4 @@
-//Write a print to take number from user and print fibonacci series up to that number
+//Write a program to take number from user and print fibonacci series up to that number
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
