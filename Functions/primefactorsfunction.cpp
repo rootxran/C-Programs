@@ -10,13 +10,13 @@ void prime_factors(int number)//Prime factors function
         if(number % i == 0)//if number is completely divisible by i value
         {
             cout << i << endl;
+            number = number / i;//Dividing number and assigning that value to number variable everytime when number is completely divisible by i value
         }
         else//if number is not divisible by i value
         {
             i++;//incrementing i
             continue;
         }
-        number = number / i;//Dividing number and assigning that value to number variable everytime when number is completely divisible by i value
     }
 }
 int main()
