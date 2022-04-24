@@ -1,4 +1,5 @@
-//Write a function to print fibonacci series upto certain number of user
+//Write a function to print fibonacci series upto user input certain number
+//By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
 int fibonacci(int num)//Fibonacci function
