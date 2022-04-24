@@ -2,7 +2,7 @@
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
-int fibonacci(int num)//Fibonacci function
+void fibonacci(int num)//Fibonacci function
 {
     int a = 0, b = 1, sum;
     for(int i = 1; i <= num + 1; i++)
