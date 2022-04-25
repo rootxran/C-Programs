@@ -7,7 +7,7 @@ int table(int a)
 {
     if(i <= 10)
     {
-        cout << "2 x " << i << " = " << a * i << endl;
+        cout << a << " x " << i << " = " << a * i << endl;
         i = i + 1;
         return (a * table(a));
     }
