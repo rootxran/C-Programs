@@ -8,10 +8,12 @@ float fun(float radius, int choice)
     if(choice == 1)
     {
         float area = 3.14 * radius * radius;
+        return area;
     }
     else if(choice == 2)
     {
         float perimeter = 2 * 3.14 * radius;
+        return perimeter;
     }
 }
 int main()
