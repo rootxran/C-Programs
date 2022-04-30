@@ -2,7 +2,7 @@
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
-double factorial(float number)
+double factorial(int number)
 {
     double fact = 1;
     for(int i = 1; i <= number; i++)
