@@ -2,14 +2,35 @@
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
-int factorial(int number)
+double factorial(float number)
 {
-    int fact = 1;
+    double fact = 1;
     for(int i = 1; i <= number; i++)
     {
     fact = fact * i;
     }
     return fact;
+}
+void oddtable()
+{
+    int number = 1;
+    for(int i = 1; number <= 100; i++)
+    {
+        if(number % 2 && i == 1)
+        {
+            cout << ">>>>>>> Table of " << number << " <<<<<<<" << endl << endl;
+        }
+        if(number % 2 == 1)
+        {
+            cout << number << " x " << i << " = " << number * i << endl;
+        }
+        if(i == 10)
+        {
+            cout << endl;
+            i = 0;
+            number++;
+        }
+    }
 }
 void fibonacci(int num)
 {
@@ -103,7 +124,7 @@ int main()
     {
         case 1:
         {
-            int sum = 0;
+            double sum = 0;
             for(int i = 1; i <= 100; i++)
             {
                 if(i % 2 == 0)
@@ -111,7 +132,11 @@ int main()
                     sum = sum + factorial(i);
                 }
             }
-            cout << sum << " is the sum";
+            cout << sum << " is the sum of factorials of even numbers up to 100" << endl;
+            cout << "\n>>>>>>>>>>>>><<<<<<<<<<<<<<" << endl;
+            cout <<   ">>>>>>>> Odd tables <<<<<<< " << endl;
+            cout <<   ">>>>>>>>>>>>><<<<<<<<<<<<<<\n" << endl;
+            oddtable();
             break;
         }
         case 2:
