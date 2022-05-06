@@ -11,10 +11,6 @@ int table(int a)
         i = i + 1;
         return (a * table(a));
     }
-    else
-    {
-        return 0;
-    }
 }
 
 int main()
