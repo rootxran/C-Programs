@@ -11,7 +11,6 @@ int main()
     int rows;
     cout << "Enter no of rows: ";
     cin >> rows;
-    int count = 1;
     int number = 1; 
     for(int i = 1; i <= rows; i++)
     {
