@@ -5,7 +5,7 @@ using namespace std;
 void fibonacci(int num)//Fibonacci function
 {
     int a = 0, b = 1, sum;
-    for(int i = 1; i <= num + 1; i++)
+    for(int i = 1; a <= num; i++)
     {
         cout << a;
         sum = a + b; 
