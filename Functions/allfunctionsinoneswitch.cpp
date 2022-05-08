@@ -35,7 +35,7 @@ void oddtable()
 void fibonacci(int num)
 {
     int a = 0, b = 1, sum;
-    for(int i = 1; i <= num + 1; i++)
+    for(int i = 1; a <= num; i++)
     {
         cout << a;
         sum = a + b; 
