@@ -6,7 +6,7 @@ int main()
 {
     int temp;
     int students[5] = {1, 2, 3, 4, 5};
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < 5; i = i + 2)
     {
         if(((students[i] % 2 == 0) && (students[i + 1] % 2 == 1)) || ((students[i] % 2 == 1) && (students[i + 1] % 2 == 0)))
         {
