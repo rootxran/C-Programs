@@ -1,3 +1,7 @@
+// Write a program to declare an array of size 10 and initialize it with random numbers between -10 and 24.
+// a)	Process array elements in loop to print the array in straight order.
+// b)	Process array elements in loop to print the array in reverse order.
+// BY RAO ALI NAWAZ
 #include <iostream>
 #include <cstdlib>//for using srand()
 #include <ctime>//for using time()
@@ -16,7 +20,7 @@ int main()
     {
         cout << a[i] << " ";
     }
-    for(int i = 0; i < 10; i++)//rearranging elements in straight
+    for(int i = 0; i < 10; i++)//rearranging elements in straight order
     {
         for(int j = i + 1; j < 10; j++)
         {
