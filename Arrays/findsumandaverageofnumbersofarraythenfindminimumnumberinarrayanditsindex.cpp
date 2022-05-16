@@ -3,7 +3,7 @@
 // b)	Count negative numbers of the array and display it.
 // c)	Find the minimum value of the array and display it.
 // d)	Find the index of the minimum value of the array and display it.
-
+// BY RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
 int main()
