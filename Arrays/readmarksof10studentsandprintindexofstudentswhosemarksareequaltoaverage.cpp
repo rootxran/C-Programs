@@ -1,4 +1,5 @@
 //Write a progrram to read marks of 10 students into an arrauy and print index of all students whose marks are equal to average
+//Input 1 2 4 6 4 7 8 9 10 9 // 6 is average // 3 is index
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
