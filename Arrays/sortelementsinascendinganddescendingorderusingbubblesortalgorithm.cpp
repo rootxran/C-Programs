@@ -50,7 +50,6 @@ int main()
 {
     int size = 10;
     int a[size];
-    int temp;
     int choice;
     for(int i = 0; i < 10; i++)
     {
