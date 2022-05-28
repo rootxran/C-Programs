@@ -2,9 +2,54 @@
 //By RAO ALI NAWAZ
 #include <iostream>
 using namespace std;
+void printarray(int a[], int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        cout << a[i] << " ";
+    }   
+}
+void bubblesort(int a[], int choice, int size)
+{
+    int temp;
+    if(choice == 1)
+    {
+        for(int i = 0; i < size; i++)
+        {
+            for(int j = 0; j < size - i; j++)
+            {
+                if(a[j] > a[j + 1])
+                {
+                    temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                }
+            }
+        }
+        cout << "Ascending Order: " << endl;
+}
+    if(choice == 2)
+    {
+        for(int i = size - 1; i >= 0; i--)
+        {
+            for(int j = size - 1; j > (size - 1) - i; j--)
+            {
+                if(a[j] >  a[j - 1])
+                {
+                    temp = a[j];
+                    a[j] = a[j - 1];
+                    a[j - 1] = temp;
+                }
+            }
+        }
+        cout << endl << "Descending Order: " << endl;
+    }
+    printarray(a, size);
+}
 int main()
 {
-    int a[10];
+    int size = 10;
+    int a[size];
     int temp;
     int choice;
     for(int i = 0; i < 10; i++)
@@ -15,44 +60,5 @@ int main()
     cout << "2. Descending Order" << endl;
     cout << endl << "Press a number : ";
     cin >> choice;
-    if(choice == 1)
-    {
-        for(int i = 0; i < 10; i++)
-        {
-            for(int j = i + 1; j < 10; j++)
-            {
-                if(a[i] > a[j])
-                {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
-        cout << "Ascending Order: " << endl;
-        for(int i = 0; i < 10; i++)
-        {
-            cout << a[i] << " ";
-        }    
-    }
-    if(choice == 2)
-    {
-        for(int i = 0; i < 10; i++)
-        {
-            for(int j = i + 1; j < 10; j++)
-            {
-                if(a[i] < a[j])
-                {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
-        cout << endl << "Descending Order: " << endl;
-        for(int i = 0; i < 10; i++)
-        {
-            cout << a[i] << " ";
-        }
-    }
+    bubblesort(a, choice, size);
 }
