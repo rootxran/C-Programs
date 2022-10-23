@@ -5,7 +5,7 @@
 //     * * * * *           * * * * *
 //   * * * * * * *       * * * * * * *
 // * * * * * * * * *   * * * * * * * * *
-//   * * * * * * * * * * * * * * * * *
+//   * * * * y o u r   n a m e * * * *
 //     * * * * * * * * * * * * * * *
 //       * * * * * * * * * * * * *
 //         * * * * * * * * * * *
@@ -19,7 +19,14 @@
 using namespace std;
 int main()
 {
-	int rows = 10;
+	int rows;
+	string name;
+	cout << "Enter no of rows: ";
+	cin >> rows;
+	cout << "Enter name: ";
+	cin.ignore();
+	getline(cin, name);
+	cout << endl;
 	for (int i = 1; i < 2 * rows; i++)
 	{
 		for (int j = 1; j < 2 * rows; j++)
@@ -58,6 +65,20 @@ int main()
 				}
 				else
 				{
+					if(i == rows/2 + 1)
+					{
+						if(j == ((2 * rows - name.length())/2) + 1)
+						{
+	
+							for(int k = 0; name[k] != '\0'; k++)
+							{
+								cout << name[k] << " ";
+								j++;
+							}
+						}
+						cout << "* ";
+					}
+					else
 					cout << "* ";
 				}
 			}
