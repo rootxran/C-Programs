@@ -1,20 +1,35 @@
-//Print heart shape using loops
-//By RAO ALI NAWAZ
+// Print heart shape using loops
+// By RAO ALI NAWAZ
+//         *                   *
+//       * * *               * * *
+//     * * * * *           * * * * *
+//   * * * * * * *       * * * * * * *
+// * * * * * * * * *   * * * * * * * * *
+//   * * * * * * * * * * * * * * * * *
+//     * * * * * * * * * * * * * * *
+//       * * * * * * * * * * * * *
+//         * * * * * * * * * * *
+//           * * * * * * * * *
+//             * * * * * * *
+//               * * * * *
+//                 * * *
+//                   *
+
 #include <iostream>
 using namespace std;
 int main()
 {
 	int rows = 10;
-	for(int i = 1; i < 2 * rows; i++)
+	for (int i = 1; i < 2 * rows; i++)
 	{
-		for(int j = 1; j < 2 * rows; j++)
-		{               
-			if(i <= rows/2)
+		for (int j = 1; j < 2 * rows; j++)
+		{
+			if (i <= rows / 2)
 			{
-				
-				if(j < rows)
+
+				if (j < rows)
 				{
-					if(j >= rows/2 - (i - 1) && j <= rows/2 + (i - 1))
+					if (j >= rows / 2 - (i - 1) && j <= rows / 2 + (i - 1))
 					{
 						cout << "* ";
 					}
@@ -25,9 +40,9 @@ int main()
 				}
 				else
 				{
-					if(j >= (3 * rows/2) - ( i - 1) && j <= (3 * rows/2) + (i - 1))
+					if (j >= (3 * rows / 2) - (i - 1) && j <= (3 * rows / 2) + (i - 1))
 					{
-						cout << "* ";	
+						cout << "* ";
 					}
 					else
 					{
@@ -37,7 +52,7 @@ int main()
 			}
 			else
 			{
-				if(j <= (i - rows/2) || j >= ((2 * rows - 1) - (i - rows/2 - 1)))
+				if (j <= (i - rows / 2) || j >= ((2 * rows - 1) - (i - rows / 2 - 1)))
 				{
 					cout << "  ";
 				}
@@ -46,7 +61,7 @@ int main()
 					cout << "* ";
 				}
 			}
-		}           
+		}
 		cout << endl;
 	}
 }
