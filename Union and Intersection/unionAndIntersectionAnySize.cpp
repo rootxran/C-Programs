@@ -52,7 +52,7 @@ void inputArray(int arr1[], int size)
   int input;
   for(int i = 0; i < size;)
   {
-    cout << i << " :";
+    cout << "Index " << i << " :";
     cin >> input;
     if(duplicateCheck(arr1, i, input))
     {
@@ -66,7 +66,7 @@ void inputSubArray(int arr1[], int arr2[], int size)
   int input;
   for(int i = 0; i < size;)
   {
-    cout << i << " : ";
+    cout << "Index " << i << " : ";
     cin >> input;
     if(duplicateCheck(arr2, ArraySize, input) == 0)
     {
@@ -77,12 +77,12 @@ void inputSubArray(int arr1[], int arr2[], int size)
       }
       else
       {
-        cout << endl << "Duplicate in Subset";
+        cout << endl << "Duplicate in Subset" << endl;
       }
     }
     else
     {
-      cout << endl << "Duplicate in universal Set" << endl;
+      cout << endl << "Not in universal Set" << endl;
     }
   }
 }
@@ -96,12 +96,15 @@ int main()
   }
   ArraySize = size;
   int universal_set[size];
-  cout << "Universal Set : ";
+  cout << "------------------------" << endl;
+  cout << "Universal Set : " << endl;
   inputArray(universal_set, size);
-  cout << "A : ";
+  cout << "------------------------" << endl;
+  cout << "A SubArray: " << endl;
   int A[size/2];
   inputSubArray(A, universal_set, size/2);
-  cout << "B : ";
+  cout << "------------------------" << endl;
+  cout << "B SubArray: " << endl;
   int B[size/2];
   inputSubArray(B, universal_set, size/2);
   int bit_A[size] = {0};
@@ -110,14 +113,17 @@ int main()
   int intersection_array[size];
   checkArray(universal_set, A, bit_A);
   checkArray(universal_set, B, bit_B);
+  cout << endl << "------------------------" << endl;
   cout << "A : ";
   displayArray(bit_A);
   cout << endl;
   cout << "B : ";
   displayArray(bit_B);
+  cout << endl << "------------------------";
   cout << endl << "Union : ";
   orOperation(bit_A, bit_B, union_array);
   displayArray(union_array);
+  cout << endl << "------------------------";
   cout << endl << "Intersection : ";
   andOperation(bit_A, bit_B, intersection_array);
   displayArray(intersection_array);
